@@ -1,9 +1,8 @@
 'use strict';
 
-var _generators = require('./generators');
+var _filterMap = require('./filter-map');
 
-console.log(_generators.genObj.next()); // 10
-// Destructuring output
+console.log(...(0, _filterMap.locations)(10)); // Destructuring output
 // import {
 //   name,
 //   price,
@@ -27,9 +26,23 @@ console.log(_generators.genObj.next()); // 10
 // console.log({...obj1, ...obj2})
 
 // Generators Section
-console.log(_generators.genObj.next()); // 11
-console.log(_generators.genObj.next()); // 12
-console.log(_generators.genObj.next()); // 13
-console.log(_generators.genObj.next()); // 14
-console.log(_generators.genObj.next()); // undefined
-console.log([...(0, _generators.range)(1, 100)]);
+// import { genObj, range, fizzbuzz, example, nestedGenerator, logObj } from './generators'
+// console.log(genObj.next()) // 10
+// console.log(genObj.next()) // 11
+// console.log(genObj.next()) // 12
+// console.log(genObj.next()) // 13
+// console.log(genObj.next()) // 14
+// console.log(genObj.next()) // undefined
+// console.log([...range(1, 100)])
+// console.log(fizzbuzz(1, 1000))
+// console.log(nestedGenerator.next())
+// console.log(nestedGenerator.next())
+// console.log(nestedGenerator.next())
+// console.log(nestedGenerator.next())
+// console.log(example(nestedGenerator).next())
+// console.log(nestedGenerator.next())
+// console.log(nestedGenerator.next())
+// logObj.next()
+// logObj.next('Look at me!')
+// logObj.next(true)
+// logObj.next(42)
